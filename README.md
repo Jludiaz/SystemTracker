@@ -42,7 +42,9 @@ String recipient = "recipient@email.com";
 
 ## Author
 Jeremy Lu Diaz
+
 jludiaz@gwu.edu
+
 George Washington University
 
 
