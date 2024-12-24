@@ -1,23 +1,51 @@
 # System Tracker Project
 
-**This is a work in progress project scheduled for completion by Winter 2024.**
-
 ## Project Introduction
 
-The objective of this project is to create a command-line application that sends a report on all of the sensors and data of the hardware thats operating the machine. The activity 
-reported to the user includes model, temperature, stress levels, threadding activty, etc. Additionally, the report will include software status reports like operating system, current system version,
-storage capacity, current network connections, etc. The scope of the project will be later on defined and expanded.
+A Java application that monitors your system's hardware metrics and sends detailed reports via email. Get insights into CPU performance, memory usage, temperature readings, and other critical system metrics delivered straight to your inbox.
+
+## Features 
+
+- Real-time hardware monitoring including:
+
+  - CPU metrics (load, cores, frequency, temperature)
+  - Memory usage and availability
+  - Graphics card information
+  - Power source status
+  - System temperatures and fan speeds
+  - Sound card details
+
+
+- Automated email reporting using secure SMTP
+- Detailed hardware component identification
+- System sensor readings
+
 
 ## Dependencies/Methods
 
-### Apache Commons
-The project will be utilizing Apache Commons which contains a library that contains, Commons Emails, which aims to provide a API for sending email.
+- OSHI (Operating System and Hardware Information): Hardware metrics collection
+- Apache Commons Email: Email functionality
+- JNA (Java Native Access)
+
+## Configuration
+
+1. Update the email credentials in MessageSender.java
+
+```java
+mail.setAuthentication("your-email@gmail.com", "your-app-password");
+```
+
+2. Set your recipient email address in Main.java:
+```java
+String recipient = "recipient@email.com";
+```
+
+## Author
+Jeremy Lu Diaz
+jludiaz@gwu.edu
+George Washington University
 
 
-### OSHI
-OSHI is a open-source Operating System and Hardware Information library for Java. OSHI will be used to gather the hardware data requested by the user.
-
-## Requirements
 
 
 
